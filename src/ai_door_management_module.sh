@@ -85,9 +85,12 @@ else
   echo "door_management_files: No such file or directory"
 fi
 
+echo $count
+
 echo
 if [ $count -eq 34 ]; then
-  ./ai_door_control.sh &
+  start ai_door_control.sh
 else
   echo "Ошибка загрузки данных... Протокол ИИ прерван."
 fi
+
